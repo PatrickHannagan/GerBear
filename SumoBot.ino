@@ -19,6 +19,5 @@ void setup() {
 }
 
 void loop() {
- digitalWrite(LED_PIN,HIGH);
 
 }
