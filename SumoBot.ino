@@ -18,6 +18,39 @@ void setup() {
 
 }
 
+void rightAccelerate(float speedInitial, float speedFinal){
+  if(speedFinal>=speedInitial){
+    for(int speed = speedInitial; speed<=speedFinal;speed++)
+    {
+      motors.setRightSpeed(speed);
+      delay(2);
+    }
+  }
+  else if(speedFinal<speedInitial){
+    for(int speed = speedInitial; speed>=speedFinal;speed--)
+    {
+      motors.setRightSpeed(speed);
+      delay(2);
+    }
+  }
+}
+void leftAccelerate(float speedInitial, float speedFinal){
+  if(speedFinal>=speedInitial){
+    for(int speed = speedInitial; speed<=speedFinal;speed++)
+    {
+      motors.setLeftSpeed(speed);
+      delay(2);
+    }
+  }
+  else if(speedFinal<speedInitial){
+    for(int speed = speedInitial; speed>=speedFinal;speed--)
+    {
+      motors.setLeftSpeed(speed);
+      delay(2);
+    }
+  }
+}
 void loop() {
+  // put your main code here, to run repeatedly:
 
 }
